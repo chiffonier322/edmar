@@ -3,34 +3,32 @@
     
   <body>
     <h1 class="text-center">Registration site for IT students!</h1>
-      
+
+    
+ 
     
     <form class="needs-validation" novalidate>
   <div class="form-row">
-    <div class="col-md-6 mb-3">
+    <div class="col-md-12 mb-3">
       <label for="validationTooltip01">First name</label>
-      <input type="text" class="form-control" id="validationTooltip01" value="card" required>
+      <input type="text" class="form-control" id="validationTooltip01" value="" required>
       <div class="valid-tooltip">
         Looks good!
       </div>
     </div>
-    <div class="col-md-6 mb-3">
+    
+    <br>
+    <br>
+
+    <div class="col-md-12 mb-3">
       <label for="validationTooltip02">Last name</label>
-      <input type="text" class="form-control" id="validationTooltip02" value="babz" required>
+      <input type="text" class="form-control" id="validationTooltip02" value="" required>
       <div class="valid-tooltip">
         Looks good!
       </div>
     </div>
   </div>
-  <div class="form-row">
-    
-      <h1 align = "rigth"></h1>  
-    <div class = "container">  
-        <div class = "row">  
-          <div class = "col-sm-12" align = "rigth">   
-           <input type = "date" name = "date">  
-          </div>  
-    </div>
+ 
     <div class="col-md-3 mb-3">
       <label for="validationTooltip04">specialty</label>
       <select class="custom-select" id="validationTooltip04" required>
@@ -49,7 +47,13 @@
       <input type="text" class="form-control" id="validationTooltip05" required>
       <div class="invalid-tooltip">
 </div>
-<div class="col-md-3 mb-3">
+<br>
+
+
+<label for="validationTooltip05">Date</label>
+<input type="text" id="datepicker">
+
+<div class="col-md-5 mb-5">
       <label for="validationTooltip05">contact number</label>
       <input type="text" class="form-control" id="validationTooltip05" required>
       <div class="invalid-tooltip">
@@ -62,3 +66,5 @@
   </div>
   <button class="btn btn-primary" type="submit">Submit form</button>
 </form>
+
+<?php require_once 'includes/footer.php'?>
